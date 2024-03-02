@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="m-0 bg-cover bg-center justify-center text-center  bg-no-repeat w-screen h-full iix:pt-28 ixr:pt-36  ixi:pt-40 iix:pb-14 ixr:pb-16  "
+        className="m-0 bg-cover bg-center justify-center text-center  bg-no-repeat w-screen h-full iix:pt-28 ixr:pt-36  ixi:pt-40 iix:pb-24 ixr:pb-28 box-shad  "
         style={bStyle}
       >
         <div className="iix:px-6 ixr:px-8 ">
@@ -36,22 +36,27 @@ const Hero = () => {
           <motion.button
             className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-whiteC iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 "
             whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             Get Started Today!!!
           </motion.button>
           <p className="text-greyC">Take the leap with confidence</p>
         </div>
-        <motion.div
-          className="iix:px-6 ixr:px-8"
-          initial={{ opacity: 0, scale: 0.7 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: true }}
-        >
-          <img src={svg} alt="Your Icon" className=" px-4" />
-        </motion.div>
       </div>
+      <motion.div
+        className="iix:px-6 ixr:px-8  iix:mt-[-5rem] ixr:mt-[-6rem]   "
+        initial={{ opacity: 0, scale: 0.7 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        viewport={{ once: true }}
+      >
+        <img
+          src={svg}
+          alt="Your Icon"
+          className="  iix:p-4 ixr:p-5 bg-lightC box-shadd "
+        />
+      </motion.div>
     </>
   );
 };

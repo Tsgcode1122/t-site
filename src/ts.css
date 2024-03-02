@@ -1,6 +1,12 @@
 .box-shad {
   box-shadow: 1px 1px 7px -1px rgb(91, 91, 91);
 }
+.box-shadd {
+  box-shadow: 1px 1px 7px -1px rgb(73, 73, 73);
+}
+.box-shadw {
+  box-shadow: 1px 1px 7px -1px rgb(206, 203, 203);
+}
 .preloader {
   display: none;
   position: fixed;

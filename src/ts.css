@@ -1,0 +1,18 @@
+.box-shad {
+  box-shadow: 1px 1px 7px -1px rgb(91, 91, 91);
+}
+.preloader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Adjust as needed */
+  justify-content: center;
+  align-items: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+}

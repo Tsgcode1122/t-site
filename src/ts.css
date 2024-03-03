@@ -21,4 +21,25 @@
 body {
   padding: 0;
   margin: 0;
+  background: #f6f5f4;
+}
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.br {
+  border-radius: 40px 40px 0 0;
+}
+.tsgf {
+  font-family: "Barlow", sans-serif;
+}
+.tsgb {
+  font-family: "Kanit", sans-serif;
+}
+.border-design {
+  border-bottom: 1px solid#27cf4e;
 }

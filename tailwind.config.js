@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+// Importing defaultTheme directly from tailwindcss
+import { defaultTheme } from "tailwindcss";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -8,20 +9,26 @@ export default {
         iix: { max: "325px" },
         ixr: { min: "326px" },
         ixi: { min: "400px" },
-        ixx: "500px",
+        ixx: { min: "500px" },
+        s: { min: "640px" },
+        m: { min: "768px" },
+        l: { min: "1024px" },
+        sl: { min: "1280px" },
       },
       colors: {
-        whiteC: "#fdfdfd", //white for background
-        lightC: "#F6F5F4", //dark of white for background
-        blackC: " #0a0a0a", // black for text
+        whiteC: "#fdfdfd",
+        lightC: "#F6F5F4", //dark of white for bg
+        blackC: "#0a0a0a",
         greyC: "#808080", //light of black for text
         brightC: "#27CF4E",
       },
       fontFamily: {
-        tsg: [" Almarai", "sans-serif"],
-        tsgD: ["Hanken Grotesk", "sans-serif"],
+        tsg: ["Kanit", "sans-serif"],
+        tsgD: ["Barlow", "sans-serif"],
       },
     },
+    // Using defaultTheme as a base
+    ...defaultTheme,
   },
   plugins: [require("daisyui")],
   daisyui: {

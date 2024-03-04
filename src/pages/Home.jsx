@@ -3,6 +3,7 @@ import Hero from "../Components/Hero";
 import HeroAds from "../Components/HeroAds";
 import WhyUs from "../Components/WhyUs";
 import ScrollImage from "../Components/ScrollImage";
+import MiniContact from "../Components/MiniContact";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <WhyUs />
       <ScrollImage />
+      <MiniContact />
     </>
   );
 };

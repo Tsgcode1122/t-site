@@ -87,7 +87,7 @@ const ScrollImage = () => {
   };
 
   return (
-    <div className="bg-whiteC items-center justify-center pt-16 br box-shadw iix:px-2 ixr:px-3 pb-40 m:px-16 sl:px-28 ">
+    <div className="bg-whiteC items-center justify-center pt-16 br box-shadw iix:px-2 ixr:px-3 ixx:pb-40 m:px-16 sl:px-28  iix:pb-28  ixr:pb-32  ">
       <h3 className="tsgb font-bold iix:text-[20px] text-center ixr:text-[25px] s:text-[35px] s:leading-normal leading-8 l:text-[40px] l:px-20">
         Eye-Catching Designs
         <span className="shadow-inner border-b-2 border-b-brightC p-1 iix:p-1 rounded-md bg-whiteC">
@@ -102,11 +102,11 @@ const ScrollImage = () => {
       <div className="l:grid l:grid-cols-2 justify-center">
         <div
           ref={containerRef1}
-          className="bg-whiteC ixr:mx-8 overflow-hidden mt-8 rounded-2xl box-shad iix:h-[20rem] iix:mx-4  ixr:h-[27rem] l:h-[75vh] sl:h-[80vh]"
+          className="bg-whiteC ixr:mx-8 overflow-hidden mt-8 rounded-2xl box-shad iix:h-[20rem] iix:mx-4  ixr:h-[27rem] l:h-[75vh] "
         >
           <img src={travel} alt="Travel" className="" />
         </div>
-        <div className="bg-whiteC ixr:mx-8  mt-8 rounded-2xl box-shad  iix:mx-4 iix:px-8 ixr:px-10  iix:pt-8 ixr:pt-10 s:px-28 s:pt-14 m:px-48 l:px-10  l:h-[75vh] sl:h-[80vh] l:overflow-hidden l:pt-10 sl:px-16">
+        <div className="bg-whiteC ixr:mx-8  mt-8 rounded-2xl box-shad  iix:mx-4 iix:px-8 ixr:px-10  iix:pt-8 ixr:pt-10 s:px-28 s:pt-14 m:px-48 l:px-10  l:h-[75vh]  l:overflow-hidden l:pt-10 sl:px-28">
           <img src={pro} alt="Pro" className="l:hidden" />
           <img src={pro2} alt="Pro2" className="hidden l:block" />
         </div>
@@ -116,18 +116,18 @@ const ScrollImage = () => {
         {/* Second container */}
         <div
           ref={containerRef2}
-          className="bg-whiteC ixr:mx-8 overflow-hidden mt-8 rounded-2xl box-shad iix:h-[20rem] iix:mx-4 sl:h-[80vh] ixr:h-[27rem] l:h-[75vh] l:order-2 "
+          className="bg-whiteC ixr:mx-8 overflow-hidden mt-8 rounded-2xl box-shad iix:h-[20rem] iix:mx-4  ixr:h-[27rem] l:h-[75vh] l:order-2 "
         >
           <img src={triumph} alt="Triumph" className="" />
         </div>
-        <div className="bg-whiteC ixr:mx-8  mt-8 rounded-2xl box-shad  iix:mx-4 iix:px-8 ixr:px-10  iix:pt-8 ixr:pt-10 s:px-28 s:pt-14 m:px-48 l:px-10 l:order-1 sl:h-[80vh] l:h-[75vh] l:overflow-hidden l:pt-10 sl:px-16 ">
+        <div className="bg-whiteC ixr:mx-8  mt-8 rounded-2xl box-shad  iix:mx-4 iix:px-8 ixr:px-10  iix:pt-8 ixr:pt-10 s:px-28 s:pt-14 m:px-48 l:px-10 l:order-1  l:h-[75vh] l:overflow-hidden l:pt-10 sl:px-28 ">
           <img src={aura} className="l:hidden" />
           <img src={aura2} className="hidden l:block" />
         </div>
       </div>
       <div className=" flex flex-col justify-center items-center iix:mt-6 ixr:mt-8">
         <motion.button
-          className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-whiteC iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf"
+          className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}

@@ -16,8 +16,13 @@ const Hero = () => {
         style={bStyle}
       >
         <div className="iix:px-6 ixr:px-8 ixx:px-12 m:px-28  l:px-48 sl:px-72 ">
-          <h1 className="iix:text-[40px] ixr:text-[46px] ixi:text-[48px] l:text-[65px] leading-none  tsgb   text-blackC font-bold m:text-[60px] sl:text-[72px]">
-            Create Website for Your Brand
+          1
+          <h1 className="iix:text-[40px] ixr:text-[46px] ixi:text-[48px] l:text-[65px]  leading-tight  tsgb   text-blackC font-bold m:text-[60px] sl:text-[72px]">
+            Create{" "}
+            <span className=" shadow-inner border-b-2 border-b-brightC p-1 iix:p-2 rounded-md bg-whiteC ">
+              Website
+            </span>{" "}
+            for Your Brand
           </h1>
         </div>
         <motion.div
@@ -34,7 +39,7 @@ const Hero = () => {
         </motion.div>
         <div className="iix:pb-6 ixr:mb-6">
           <motion.button
-            className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-whiteC iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3  tsgf"
+            className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3  tsgf"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}

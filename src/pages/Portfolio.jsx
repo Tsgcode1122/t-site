@@ -33,6 +33,9 @@ const Portfolio = () => {
             whileTap={{ scale: 1.02 }}
             onHoverStart={() => setHoveredProject(index)}
             onHoverEnd={() => setHoveredProject(null)}
+            onTapStart={() => setHoveredProject(index)}
+            onTapEnd={() => setHoveredProject(null)}
+            onPan={() => setShowDetails(true)}
           >
             <motion.img
               src={portfolio.image}

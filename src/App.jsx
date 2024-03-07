@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       { path: "WhyUs", element: <WhyUs /> },
       { path: "Blogs", element: <Blogs /> },
       {
-        path: "Portfolio/:PortfolioId",
+        path: "Portfolio/:portfolioId",
         element: <SinglePortfolio />,
       },
     ],

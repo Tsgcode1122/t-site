@@ -57,7 +57,7 @@ const Faqs = () => {
                 What happens if I don't have any content for my website?
               </div>
 
-              <p className="text-greyC">
+              <p className="text-greyC tsgf">
                 No worries! We can work with you to create compelling content
                 that aligns with your website goals and audience.
               </p>

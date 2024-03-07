@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaInstagram } from "react-icons/fa";
@@ -7,6 +7,9 @@ import HeroAds from "../Components/HeroAds";
 import FooterContact from "../Components/FooterContact";
 import { MdOutlineEmail } from "react-icons/md";
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const bStyle = {
     backgroundImage: `url(${whB})`,
   };

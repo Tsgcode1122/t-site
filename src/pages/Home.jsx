@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Hero from "../Components/Hero";
 import HeroAds from "../Components/HeroAds";
 import WhyUs from "../Components/WhyUs";
@@ -11,6 +11,9 @@ import Faqs from "../Components/Faqs";
 import FooterContact from "../Components/FooterContact";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <HeroAds />

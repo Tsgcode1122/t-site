@@ -1,10 +1,13 @@
 import { portfolioData } from "../Components/PortfolioData";
 import HeroAds from "../Components/HeroAds";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [hoveredProject, setHoveredProject] = useState(null);
   return (
     <>
@@ -14,15 +17,9 @@ const Portfolio = () => {
         <h3 className="tsgb font-bold iix:text-[20px] text-center ixr:text-[25px] s:text-[35px] s:leading-normal leading-8 l:text-[40px] l:px-20">
           View out
           <span className="shadow-inner border-b-2 border-b-brightC p-1 iix:p-1 rounded-md bg-whiteC">
-            Business Owners
+            Work
           </span>{" "}
-          Work
         </h3>
-        <p>
-          Explore our work to discover affordable websites without compromising
-          quality. We believe in delivering dream websites without breaking the
-          bank.
-        </p>
       </div>
       <div className="mt-16 flex flex-col gap-8 mx-8 ">
         {portfolioData.map((portfolio, index) => (

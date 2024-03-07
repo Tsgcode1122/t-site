@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { portfolioData } from "./PortfolioData";
 import { useParams } from "react-router-dom";
 import HeroAds from "./HeroAds";
+import FooterContact from "./FooterContact";
 
 const SinglePortfolio = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const SinglePortfolio = () => {
   console.log("Portfolio found:", portfolio);
 
   const review = portfolio?.review; // Ensure that review is defined
+
   const getInitials = (name) => {
     const names = name.split(" ");
     return names
@@ -28,40 +30,45 @@ const SinglePortfolio = () => {
     <>
       <HeroAds />
       <div className="h-28"></div>
-      <p> Web Design for {portfolio.name}</p>
-      <p> {portfolio.description}</p>
-
-      <img src={portfolio.image} alt={`${portfolio.name}`} />
+      <div className="flex flex-col mt-8 text-center">
+        <p className="text-[35px]">
+          {" "}
+          Web Design for <span className="text-brightC"> {portfolio.name}</span>
+        </p>
+        <p> {portfolio.description}</p>
+      </div>
       <img
         src={portfolio.imageResponsive}
         alt={`${portfolio.name} Responsive`}
+        className="p-4"
       />
-      {review && (
-        <div>
-          <div
-            key={review.id}
-            className="bg-lightC box-shad rounded-md p-4 mb-4 box-shad "
-          >
-            <div className="flex justify-between items-center mb-2">
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-blueC text-blackC rounded-full flex items-center justify-center font-semibold mr-2 box-shad font-tsg">
-                  {getInitials(review.name)}
-                </div>
-                <div className="text-lg font-semibold tsgb">{review.name}</div>
+      <img src={portfolio.image} alt={`${portfolio.name}`} />
+      <div className="mt-8 px-4">
+        <div className="bg-lightC box-shad rounded-md p-4 mb-4 box-shad ">
+          <div className="flex justify-between items-center mb-2">
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-blueC text-blackC rounded-full flex items-center justify-center font-semibold mr-2 box-shad font-tsg">
+                {getInitials(portfolio.review.name)}
               </div>
-              <div className="flex items-center">
-                {[...Array(review.rating)].map((_, index) => (
-                  <div key={index} className="text-yellow-500 mr-1">
-                    ⭐
-                  </div>
-                ))}
+              <div className="text-lg font-semibold tsgb">
+                {portfolio.review.name}
               </div>
             </div>
-            <div className="text-gray-500 tsgf mb-2">{review.date}</div>
-            <div className="text-darkC tsgf">{review.content}</div>
+            <div className="flex items-center">
+              {[...Array(portfolio.review.rating)].map((_, index) => (
+                <div key={index} className="text-yellow-500 mr-1">
+                  ⭐
+                </div>
+              ))}
+            </div>
           </div>
+          <div className="text-gray-500 tsgf mb-2">{portfolio.review.date}</div>
+          <div className="text-darkC tsgf">{portfolio.review.content}</div>
         </div>
-      )}
+      </div>
+      <div className=" mt-56">
+        <FooterContact />
+      </div>
     </>
   );
 };

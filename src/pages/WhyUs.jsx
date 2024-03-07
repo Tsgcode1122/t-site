@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FooterContact from "../Components/FooterContact";
 import WhyUss from "../Components/WhyUs";
 import HeroAds from "../Components/HeroAds";
@@ -6,6 +6,9 @@ import whyB from "../Images/whych.png";
 import whB from "../Images/qu.jpg";
 import PriceOffer from "../Components/PriceOffer";
 const WhyUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const bStyle = {
     backgroundImage: `url(${whB})`,
   };

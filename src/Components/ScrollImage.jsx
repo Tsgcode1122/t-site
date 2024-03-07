@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import travel from "../scroll/travel.jpg";
-import triumph from "../scroll/triumph.png";
+import triumph from "../Images/rtriump.png";
 import pro from "../scroll/12pro.png";
 import pro2 from "../scroll/a.png";
 import aura from "../scroll/aura.png";

@@ -1,52 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
-
-const BlogForm = ({ onPostSubmit, editMode = false, initialData }) => {
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+const BlogForm = ({ onPostSubmit }) => {
   const [title, setTitle] = useState("");
   const [posterName, setPosterName] = useState("");
   const [content, setContent] = useState("");
+  const [content1, setContent1] = useState("");
+  const [content2, setContent2] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-
-  useEffect(() => {
-    if (editMode && initialData) {
-      setTitle(initialData.title || "");
-      setPosterName(initialData.posterName || "");
-      setContent(initialData.content || "");
-    }
-  }, [editMode, initialData]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const blogPostData = {
+    // Create a new blog post object
+    const newBlogPost = {
       title,
       posterName,
       content,
-      date: new Date().toISOString(),
+      content1,
+      content2,
+      date: new Date().toISOString().split("T")[0],
     };
 
     try {
-      if (editMode) {
-        // Update existing blog post
-        await axios.put(
-          `https://api.backendless.com/DD77255D-6502-F03A-FFCE-39208DC9DC00/4FBAD162-6DAE-4B4E-9441-E57DDAEDCC17/data/BlogPost/${initialData.objectId}`,
-          blogPostData,
-        );
-      } else {
-        // Create new blog post
-        await axios.post(
-          "https://api.backendless.com/DD77255D-6502-F03A-FFCE-39208DC9DC00/4FBAD162-6DAE-4B4E-9441-E57DDAEDCC17/data/BlogPost",
-          blogPostData,
-        );
-      }
+      // Submit the new blog post to Backendless
+      await axios.post(
+        "https://api.backendless.com/DD77255D-6502-F03A-FFCE-39208DC9DC00/4FBAD162-6DAE-4B4E-9441-E57DDAEDCC17/data/BlogPost",
+        newBlogPost,
+      );
 
       setSuccessMessage("Blog post submitted successfully!");
       setTitle("");
       setPosterName("");
       setContent("");
-
-      // Trigger the callback function to update the list of blog posts
-      onPostSubmit();
     } catch (error) {
       console.error("Error submitting blog post:", error.message);
     }
@@ -56,17 +43,18 @@ const BlogForm = ({ onPostSubmit, editMode = false, initialData }) => {
     <>
       <div className="h-32"></div>
       {successMessage && <p className="text-green-500">{successMessage}</p>}
-      <form onSubmit={handleSubmit}>
-        <label>
+      <form onSubmit={handleSubmit} className="px-8">
+        <label className="flex justify-between ">
           Title:
-          <input
+          <textarea
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            className="h-28 w-72 "
           />
         </label>
         <br />
-        <label>
+        <label className="flex justify-between ">
           Poster Name:
           <input
             type="text"
@@ -75,15 +63,36 @@ const BlogForm = ({ onPostSubmit, editMode = false, initialData }) => {
           />
         </label>
         <br />
-        <label>
-          Content:
-          <textarea
+        <label className="flex justify-between ">
+          <span>Content:</span>
+          <ReactQuill
             value={content}
-            onChange={(e) => setContent(e.target.value)}
+            onChange={(value) => setContent(value)}
+            className="h-72 w-[18rem]"
+          />
+        </label>
+        <label className="flex justify-between ">
+          <span></span>
+          <ReactQuill
+            value={content}
+            onChange={(value) => setContent1(value)}
+            className="h-72 w-[18rem]"
+          />
+        </label>
+        <label className="flex justify-between ">
+          <span></span>
+          <ReactQuill
+            value={content}
+            onChange={(value) => setContent1(value)}
+            className="h-72 w-[18rem]"
           />
         </label>
         <br />
-        <button type="submit">{editMode ? "Update" : "Submit"}</button>
+        <div className="flex justify-center  bg-brightC mt-20">
+          <button type="submit" className="text-center">
+            Submit
+          </button>
+        </div>
       </form>
     </>
   );

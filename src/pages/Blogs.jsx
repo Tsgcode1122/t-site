@@ -30,14 +30,16 @@ const Blogs = () => {
     <>
       <HeroAds />
       <div className="h-32"></div>
-      <div>
-        {/* Display the list of blogs */}
+      <div className="px-4 flex flex-col gap-16 ">
         {blogs.map((blog) => (
-          <div key={blog.objectId}>
-            <h2>{blog.title}</h2>
-            <p>Poster: {blog.posterName}</p>
-            <p>Date: {blog.date}</p>
-            <p>{blog.content}</p>
+          <div key={blog.objectId} className="flex flex-col gap-2">
+            <h2 className="font-semibold tsgf">{blog.title}</h2>
+
+            <p className="text-justify tsgf">{blog.content}</p>
+            <p className="text-justify tsgf">{blog.content1}</p>
+            <p className="text-justify tsgf">{blog.content2}</p>
+            <p className="italic tsgf">Date: {blog.date}</p>
+            <p className=" italic tsgf">Posted by: {blog.posterName}</p>
           </div>
         ))}
         {/* <BlogForm onPostSubmit={handlePostSubmit} /> */}

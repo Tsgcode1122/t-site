@@ -74,7 +74,7 @@ const BlogForm = ({ onPostSubmit }) => {
         <label className="flex justify-between ">
           <span></span>
           <ReactQuill
-            value={content}
+            value={content1}
             onChange={(value) => setContent1(value)}
             className="h-72 w-[18rem]"
           />
@@ -82,7 +82,7 @@ const BlogForm = ({ onPostSubmit }) => {
         <label className="flex justify-between ">
           <span></span>
           <ReactQuill
-            value={content}
+            value={content2}
             onChange={(value) => setContent1(value)}
             className="h-72 w-[18rem]"
           />

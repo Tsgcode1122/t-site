@@ -6,6 +6,7 @@ import pro2 from "../scroll/a.png";
 import aura from "../scroll/aura.png";
 import aura2 from "../scroll/abb.png";
 import { motion } from "framer-motion";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 const ScrollImage = () => {
   const containerRef1 = useRef(null);
   const containerRef2 = useRef(null);
@@ -14,7 +15,7 @@ const ScrollImage = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Adjust the threshold as needed
+      threshold: 0.5,
     };
 
     const observerCallback = (entries, observer) => {
@@ -41,7 +42,7 @@ const ScrollImage = () => {
   const scrollAnimation = (container) => {
     const start = container.scrollTop;
     const end = container.scrollHeight - container.clientHeight;
-    const duration = 15000; // Adjust the duration as needed (in milliseconds)
+    const duration = 15000;
     const startTime = performance.now();
 
     const scroll = (currentTime) => {
@@ -52,10 +53,9 @@ const ScrollImage = () => {
       if (progress < 1) {
         requestAnimationFrame(scroll);
       } else {
-        // After reaching the end, initiate scrolling back to the initial position
         setTimeout(() => {
           scrollBackToStart(container);
-        }, 1000); // Add a delay before scrolling back (adjust as needed)
+        }, 1000);
       }
     };
 
@@ -64,8 +64,8 @@ const ScrollImage = () => {
 
   const scrollBackToStart = (container) => {
     const start = container.scrollTop;
-    const end = 0; // Initial position
-    const duration = 15000; // Adjust the duration as needed (in milliseconds)
+    const end = 0;
+    const duration = 15000;
     const startTime = performance.now();
 
     const scroll = (currentTime) => {
@@ -76,10 +76,9 @@ const ScrollImage = () => {
       if (progress < 1) {
         requestAnimationFrame(scroll);
       } else {
-        // After reaching the initial position, initiate scrolling down again
         setTimeout(() => {
           scrollAnimation(container);
-        }, 1000); // Add a delay before scrolling down again (adjust as needed)
+        }, 1000);
       }
     };
 
@@ -126,14 +125,16 @@ const ScrollImage = () => {
         </div>
       </div>
       <div className=" flex flex-col justify-center items-center iix:mt-6 ixr:mt-8">
-        <motion.button
-          className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-        >
-          Explore our Portfolio
-        </motion.button>
+        <Link to="/Portfolio">
+          <motion.button
+            className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            Explore our Portfolio
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

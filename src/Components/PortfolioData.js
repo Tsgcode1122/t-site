@@ -43,6 +43,7 @@ export const portfolioData = [
     image: auroglow,
     imageResponsive: auroglow1,
     description: "Skincare Website",
+    live: "https://auraaglow.netlify.app/",
     review: {
       name: "Alexander Ford",
       rating: 4,
@@ -57,6 +58,7 @@ export const portfolioData = [
     image: lashes,
     imageResponsive: lashes1,
     description: "Lashes Website",
+    live: "https://k-nicolelashes.netlify.app",
     review: {
       name: "Kristen Parker",
       rating: 5,
@@ -71,12 +73,28 @@ export const portfolioData = [
     image: ignition,
     imageResponsive: ignition1,
     description: "Mobile Auto repair Website",
+    live: "http://Www.ignitioncarcare.com",
     review: {
       name: "Eva Rodriguez",
       rating: 5,
       date: "December 25, 2023",
       content:
         "ignition Carcare's website is a game-changer! The design is practical, and the appointment booking system streamlines their services. Kudos to the team for their automotive expertise!",
+    },
+  },
+  {
+    id: "TriumphSolarPicasso",
+    name: "Triumph SolarPicasso",
+    image: triumph,
+    imageResponsive: triumph1,
+    description: " Solar Website",
+    live: "https://triumphsolarpicasso.netlify.app",
+    review: {
+      name: "Tom Harper",
+      rating: 5,
+      date: "January 10, 2024",
+      content:
+        "Triumph SolarPicasso's website design impressed me! It's informative, visually appealing, and user-friendly. The team's commitment to sustainability shines through. Excellent work!",
     },
   },
   {
@@ -100,6 +118,7 @@ export const portfolioData = [
     image: notary,
     imageResponsive: notary1,
     description: "Notary Services Website",
+    live: "https://tsgnotary.netlify.app/",
     review: {
       name: "David Lewis",
       rating: 5,
@@ -108,26 +127,14 @@ export const portfolioData = [
         "TsgNotary's website design exceeded my expectations! It's professional, user-friendly, and aligns perfectly with the notary services they offer. Highly satisfied with the outcome!",
     },
   },
-  {
-    id: "TriumphSolarPicasso",
-    name: "Triumph SolarPicasso",
-    image: triumph,
-    imageResponsive: triumph1,
-    description: " Solar Website",
-    review: {
-      name: "Tom Harper",
-      rating: 5,
-      date: "January 10, 2024",
-      content:
-        "Triumph SolarPicasso's website design impressed me! It's informative, visually appealing, and user-friendly. The team's commitment to sustainability shines through. Excellent work!",
-    },
-  },
+
   {
     id: "cheelux",
     name: "cheelux",
     image: cheelux,
     imageResponsive: cheelux1,
     description: "Gym Wear Website",
+    live: "http://Www.cheelux.com",
     review: {
       name: "Caroline Turner",
       rating: 5,

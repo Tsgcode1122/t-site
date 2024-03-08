@@ -3,6 +3,7 @@ import HeroAds from "../Components/HeroAds";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import FooterContact from "../Components/FooterContact";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -13,24 +14,24 @@ const Portfolio = () => {
     <>
       <HeroAds />
       <div className="h-20"></div>
-      <div>
-        <h3 className="tsgb font-bold iix:text-[20px] text-center ixr:text-[25px] s:text-[35px] s:leading-normal leading-8 l:text-[40px] l:px-20">
-          View out
+      <div className="mt-16 l:mt-28">
+        <h3 className="tsgb font-bold iix:text-[20px] text-center ixr:text-[25px] s:text-[35px] s:leading-normal leading-8 l:text-[40px]  l:px-20 ">
+          View our
           <span className="shadow-inner border-b-2 border-b-brightC p-1 iix:p-1 rounded-md bg-whiteC">
             Work
           </span>{" "}
         </h3>
       </div>
-      <div className="mt-16 flex flex-col gap-8 mx-8 ">
+      <div className="mt-16 flex flex-col m:grid m:grid-cols-2 gap-8 l:mx-16 mx-8 sl:mx-36 ">
         {portfolioData.map((portfolio, index) => (
           <motion.div
             key={index}
-            className="relative h-[20rem] overflow-hidden rounded-3xl shadow-2xl"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 1.02 }}
+            className="relative h-[20rem] overflow-hidden m:mb-8 rounded-3xl shadow-2xl hover:scale-[1.02]"
+            // whileHover={{ scale: 1.02 }}
+            // whileTap={{ scale: 1.02 }}
             onHoverStart={() => setHoveredProject(index)}
             onHoverEnd={() => setHoveredProject(null)}
-            onTapStart={() => setHoveredProject(index)}
+            onClick={() => setHoveredProject(index)}
             onTapEnd={() => setHoveredProject(null)}
             onPan={() => setShowDetails(true)}
           >
@@ -62,6 +63,9 @@ const Portfolio = () => {
             )}
           </motion.div>
         ))}
+      </div>
+      <div className=" mt-56">
+        <FooterContact />
       </div>
     </>
   );

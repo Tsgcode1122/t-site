@@ -37,20 +37,22 @@ const Hero = () => {
           </p>
         </motion.div>
         <div className="iix:pb-6 ixr:mb-6">
-          <motion.button
-            className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3  tsgf"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
-            Get Started Today!!!
-          </motion.button>
+          <Link to="/Contact">
+            <motion.button
+              className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3  tsgf"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              Get Started Today!!!
+            </motion.button>
+          </Link>
           <p className="text-greyC tsgf">Take the leap with confidence</p>
         </div>
       </div>
       <motion.div
         className="iix:px-6 ixr:px-8 flex items-center justify-center iix:mt-[-5rem] ixr:mt-[-6rem] m:mt-[-14rem]  m:px-32 l:px-40 sl:px-72 "
-        initial={{ opacity: 0, scale: 0.7 }}
+        initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.9 }}
         viewport={{ once: true }}

@@ -170,7 +170,7 @@ const FooterContact = () => {
                   </button>
                 </a>
 
-                <a href="mailto:triumphsolar@yahoo.com">
+                <a href="mailto:tsgcode201@gmail.com">
                   <button className=" box-shad p-2 bg-lightC rounded-full flex items-center gap-4">
                     <MdOutlineEmail />
                   </button>
@@ -208,7 +208,7 @@ const FooterContact = () => {
           </div>
           <div className="flex justify-center items-center w-full">
             <p className="tsgf border-t-whiteC border-2 font-medium">
-              ©2024 Ts Sites - Web Design
+              ©2024 Soft Sites - Web Design
             </p>
           </div>
         </footer>

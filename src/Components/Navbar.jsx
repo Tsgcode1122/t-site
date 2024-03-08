@@ -26,12 +26,12 @@ const Navbar = () => {
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className="md:hidden fixed w-full iix:p-3 ixr:p-3 ixi:p-4 ixx:p-6 z-50 top-8 iix:top-6"
+        className="md:hidden fixed w-full iix:p-3 ixr:p-3 ixi:p-4 ixx:px-6 ixx:py-2 z-50 top-8 iix:top-6"
       >
         <motion.button
           whileTap={{ scale: 0.97 }}
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-lightC flex justify-between items-center rounded-xl  w-full iix:py-3 iix:px-4 ixr:px-4 ixi:px-5 i iix:mb-3 ixr:py-3 ixr:mb-3  ixi:py-4 ixi:mb-4 ixx:py-4 ixx:mb-4  ixx:px-5 box-shad"
+          className="bg-lightC flex justify-between items-center rounded-xl  w-full iix:py-2 iix:px-4 ixr:px-2 ixi:px-5  ixr:mt-[-10px] s:mt-[-4px] ixi:mt-[-14px] iix:mb-1 ixr:py-2 ixr:mb-2 s:py-3 ixi:py-2 ixi:mb-2 ixx:py-2 ixx:mb-3  ixx:px-5 box-shad"
         >
           <p className="mr-4  ">Menu</p>
           <motion.div
@@ -124,31 +124,31 @@ const Navbar = () => {
         </motion.ul>
       </motion.nav>
 
-      <div className="hidden fixed w-full  text-darkC  md:flex md:px-6 md:py-4 navbar z-50 lg:px-12 xl:px-32  md:top-9  ">
-        <div className="bg-lightC w-full rounded-xl box-shad flex  justify-between items-center md:px-4 md:py-3 lg:py-4 xl:py-5">
+      <div className="hidden fixed w-full   text-darkC  m:flex m:px-6 m:py-5 navbar z-50 l:px-12 sl:px-32  m:top-4  l:top-5">
+        <div className="bg-lightC w-full rounded-xl box-shad flex  justify-between items-center m:px-4 m:py-1 l:py-2 sl:py-2">
           <ul className="menu menu-horizontal md:text-[16px]  lg:text-[18px] xl:text-xl ">
-            <li className="md:px-2 lg:px-3 xl:px-4">
+            <li className="m:px-2 l:px-3 sl:px-4">
               <Link to="/">Home</Link>
             </li>
-            <li className="md:px-2 lg:px-3 xl:px-4">
+            <li className="m:px-2 l:px-3 sl:px-4">
               <Link to="/WhyUs">Why Us</Link>
             </li>
-            <li className="md:px-2 lg:px-3 xl:px-4">
+            <li className="m:px-2 l:px-3 sl:px-4">
               <Link to="/Contact">Contact</Link>
             </li>
           </ul>
           <Link to="/" className="btn btn-ghost text-xl">
             <img className="max-w-full h-[50px] " alt="Logo" />
           </Link>
-          <ul className="menu menu-horizontal  md:text-[16px]  lg:text-[18px] xl:text-xl ">
-            <li className="md:px-2 lg:px-3 xl:px-4">
+          <ul className="menu menu-horizontal  md:text-[16px]  lg:text-[18px] sl:text-xl ">
+            <li className="m:px-2 l:px-3 sl:px-4">
               <Link to="/Portfolio">Portfolio</Link>
             </li>
-            <li className="md:px-2 lg:px-3 xl:px-4">
+            <li className="m:px-2 l:px-3 xl:px-4">
               <Link to="/Blogs">Blogs</Link>
             </li>
 
-            <li className="md:px-2 lg:px-3 xl:px-4">
+            <li className="m:px-2 l:px-3 sl:px-4">
               <Link to="/Contact">Chat With Us</Link>
             </li>
           </ul>

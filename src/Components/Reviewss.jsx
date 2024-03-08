@@ -92,14 +92,16 @@ const Reviewss = () => {
             More Reviews
           </button>
         </Link> */}
-        <motion.button
-          className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf border-design text-brightC l:mb-0"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-        >
-          Contact Now!!!
-        </motion.button>
+        <Link to="/Reviews">
+          <motion.button
+            className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf border-design text-brightC l:mb-0"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            Contact Now!!!
+          </motion.button>
+        </Link>
       </div>
     </>
   );

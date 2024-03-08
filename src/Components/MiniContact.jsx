@@ -3,6 +3,8 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import ui from "../Images/ui.png";
 import "../ts.css";
+import { Link } from "react-router-dom";
+
 // import minicontact from "../Images/minicontact";
 const MiniContact = () => {
   return (
@@ -25,14 +27,16 @@ const MiniContact = () => {
           </div>
 
           <div className=" flex flex-col justify-center items-center iix:mt-6 ixr:mt-10 l:mt-2 ">
-            <motion.button
-              className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf border-design l:mb-0"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              Contact Now!!!
-            </motion.button>
+            <Link to="/Contact">
+              <motion.button
+                className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 tsgf border-design l:mb-0"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                Contact Now!!!
+              </motion.button>
+            </Link>
           </div>
         </div>
       </div>

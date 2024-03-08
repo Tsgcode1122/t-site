@@ -9,6 +9,7 @@ import Blogs from "./pages/Blogs";
 import Preloader from "./Components/Preloader";
 import Navbar from "./Components/Navbar";
 import SinglePortfolio from "./Components/SinglePortfolio";
+import BlogForm from "./Backendless/BlogForm";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,8 @@ const router = createBrowserRouter([
       { path: "Portfolio", element: <Portfolio /> },
       { path: "WhyUs", element: <WhyUs /> },
       { path: "Blogs", element: <Blogs /> },
+      { path: "Blogs", element: <Blogs /> },
+      { path: "Form", element: <BlogForm /> },
       {
         path: "Portfolio/:portfolioId",
         element: <SinglePortfolio />,

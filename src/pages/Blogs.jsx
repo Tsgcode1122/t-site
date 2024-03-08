@@ -1,37 +1,47 @@
 import React, { useState, useEffect } from "react";
-import io from "socket.io-client";
+import axios from "axios";
 import HeroAds from "../Components/HeroAds";
+import BlogForm from "../Backendless/BlogForm";
 
 const Blogs = () => {
-  // const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState([]);
 
-  // useEffect(() => {
-  //   const socket = io("https://your-socket-server-endpoint.com");
+  const fetchBlogs = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.backendless.com/DD77255D-6502-F03A-FFCE-39208DC9DC00/4FBAD162-6DAE-4B4E-9441-E57DDAEDCC17/data/BlogPost",
+      );
+      setBlogs(response.data);
+    } catch (error) {
+      console.error("Error fetching blogs:", error.message);
+    }
+  };
 
-  //   // Handle new blog posts
-  //   socket.on("newBlog", (newBlog) => {
-  //     setBlogs((prevBlogs) => [newBlog, ...prevBlogs]);
-  //   });
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
 
-  //   return () => {
-  //     socket.disconnect();
-  //   };
-  // }, []);
+  const handlePostSubmit = () => {
+    console.log("Handling post submit...");
+    fetchBlogs();
+  };
+
   return (
     <>
       <HeroAds />
-      {/* <div>
+      <div className="h-32"></div>
+      <div>
+        {/* Display the list of blogs */}
         {blogs.map((blog) => (
-          <div key={blog.id}>
+          <div key={blog.objectId}>
             <h2>{blog.title}</h2>
             <p>Poster: {blog.posterName}</p>
             <p>Date: {blog.date}</p>
             <p>{blog.content}</p>
           </div>
         ))}
-      </div> */}
-      <div className="h-28"></div>
-      <h4 className="text-center">No Post Yet....</h4>
+        {/* <BlogForm onPostSubmit={handlePostSubmit} /> */}
+      </div>
     </>
   );
 };

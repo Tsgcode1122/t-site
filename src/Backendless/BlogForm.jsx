@@ -105,7 +105,7 @@ const BlogForm = ({ onPostSubmit }) => {
         </label>
         <label className="flex flex-col mb-4">
           <span className="mb-2">Content:</span>
-          <div className="grid grid-cols-1 s:grid-cols-2 gap-28">
+          <div className="grid grid-cols-1 s:grid-cols-2 gap-20">
             <ReactQuill
               value={content}
               onChange={(value) => setContent(value)}
@@ -113,19 +113,17 @@ const BlogForm = ({ onPostSubmit }) => {
               formats={formats}
               className=" border p-2 rounded focus:outline-none"
             />
-            <ReactQuill
+            <textarea
+              type="text"
               value={content1}
-              onChange={(value) => setContent1(value)}
-              modules={modules}
-              formats={formats}
-              className=" border p-2 rounded focus:outline-none"
+              onChange={(e) => setContent1(e.target.value)}
+              className=" h-[20rem] border p-2 rounded focus:outline-none"
             />
-            <ReactQuill
+            <textarea
+              type="text"
               value={content2}
-              onChange={(value) => setContent2(value)}
-              modules={modules}
-              formats={formats}
-              className=" border p-2 rounded focus:outline-none"
+              onChange={(e) => setContent2(e.target.value)}
+              className=" h-[20rem] border p-2 rounded focus:outline-none"
             />
           </div>
         </label>

@@ -49,7 +49,7 @@ export const portfolioData = [
       rating: 4,
       date: "December 10, 2023",
       content:
-        "AuraGlow's website is a sanctuary for skincare enthusiasts. The design radiates sophistication and mirrors the quality of their products. An exquisite user experience indeed!",
+        " The communication was top-notch, pricing was fair, and the transformation of our website is beyond impressive. They truly brought our vision to life!",
     },
   },
   {
@@ -64,7 +64,7 @@ export const portfolioData = [
       rating: 5,
       date: "December 15, 2023",
       content:
-        "K-nicole Lashes' website is a beauty haven! It goes beyond lashes, offering an immersive beauty experience. The team's creativity has truly elevated their brand.",
+        " Absolutely love it! I requested integration of my booking site into the website, and they not only fulfilled my request but made everything seamless. Super impressed 🌐✨ ",
     },
   },
   {
@@ -79,7 +79,7 @@ export const portfolioData = [
       rating: 5,
       date: "December 25, 2023",
       content:
-        "ignition Carcare's website is a game-changer! The design is practical, and the appointment booking system streamlines their services. Kudos to the team for their automotive expertise!",
+        "They did exactly what we requested for, the graphics they use make it more enticing, the booking appointment, Kudos",
     },
   },
   {
@@ -108,7 +108,7 @@ export const portfolioData = [
       rating: 5,
       date: "December 20, 2023",
       content:
-        "JointA's crypto website is a digital fortress! It seamlessly combines visual appeal, security, and user-friendliness. The team's expertise in crypto web design is commendable.",
+        "Absolute amazing results, i saw some on there website and i really like it, and i reach out to get mine, it was a great experience!!",
     },
   },
 
@@ -124,7 +124,7 @@ export const portfolioData = [
       rating: 5,
       date: "December 30, 2023",
       content:
-        "TsgNotary's website design exceeded my expectations! It's professional, user-friendly, and aligns perfectly with the notary services they offer. Highly satisfied with the outcome!",
+        "Absolutely love our new website designed by Softsites! It perfectly captures our notary services with a sleek and user-friendly design. [Your Name] exceeded our expectations, and we highly recommend their expertise to anyone looking for a top-notch web designer.",
     },
   },
 
@@ -139,8 +139,7 @@ export const portfolioData = [
       name: "Caroline Turner",
       rating: 5,
       date: "January 5, 2024",
-      content:
-        "Cheelux is not just gym wear; it's a lifestyle! The website design is trendy, offering a seamless online shopping experience. The team's dedication to fitness is evident. Love it!",
+      content: "🌟 Outstanding communication, worth every penny! ",
     },
   },
 ];

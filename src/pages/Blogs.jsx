@@ -33,7 +33,7 @@ const Blogs = () => {
       <p className="text-center mb-5 font-semibold">
         Read our brief blog for quick insights and interesting snippets.
       </p>
-      <div className="px-4 flex flex-col gap-8 l:grid l:grid-cols-2  l:gap-8 mx-4 l:mx-12 sl:mx-28 ">
+      <div className="px-4 flex flex-col gap-8 l:grid l:grid-cols-2  l:gap-8 mx-4 l:mx-12 sl:mx-28 text-left ">
         {blogs.map((blog) => (
           <div
             key={blog.objectId}

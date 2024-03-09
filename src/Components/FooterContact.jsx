@@ -192,7 +192,7 @@ const FooterContact = () => {
                     <Link to="/Whyus">Why Us</Link>
                   </li>
                   <li className="link link-hover">
-                    <Link to="/Blog">Blog</Link>
+                    <Link to="/Blogs">Blog</Link>
                   </li>
                 </ul>
               </div>

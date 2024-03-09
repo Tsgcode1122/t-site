@@ -33,7 +33,7 @@ const Faqs = () => {
                 Is there a one-time payment for website development?
               </div>
 
-              <p className="tsgf text-greyC text-justify">
+              <p className="tsgf text-greyC ">
                 Yes, we offer a one-time payment option for website development
                 services.
               </p>
@@ -81,7 +81,7 @@ const Faqs = () => {
                 Will I own the website once it's developed?
               </div>
 
-              <p className="tsgf text-greyC text-justify">
+              <p className="tsgf text-greyC">
                 Absolutely! Upon completion and payment, the website becomes
                 your property.
               </p>
@@ -105,7 +105,7 @@ const Faqs = () => {
                 How does hosting work if I have my own domain registered?
               </div>
 
-              <p className="tsgf text-greyC text-justify">
+              <p className="tsgf text-greyC ">
                 We offer the flexibility for you to bring your personal domain.
                 Additionally, if you choose our hosting services, you get 1 year
                 of free hosting from us.

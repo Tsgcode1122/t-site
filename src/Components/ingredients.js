@@ -3,7 +3,7 @@ import React from "react";
 export const allIngredients = [
   {
     icon: "🌐",
-    label: "Landing Page",
+    label: "Business",
     items: [
       "  Free Site Management",
       "Responsive Custom Design",

@@ -16,7 +16,7 @@ const Hero = () => {
         style={bStyle}
       >
         <div className="iix:px-4 ixr:px-6 ixx:px-10 m:px-28  l:px-48 sl:px-72 ">
-          <h1 className="iix:text-[38px] ixr:text-[42px] ixi:text-[44px] l:text-[65px]  leading-tight iix:leading-none ixr:leading-none  tsgb   text-blackC font-bold m:text-[60px] sl:text-[72px]">
+          <h1 className="iix:text-[38px] ixr:text-[42px] ixi:text-[44px] l:text-[65px]  leading-tight iix:leading-none ixr:leading-none tsgb   text-blackC font-bold m:text-[60px] sl:text-[72px]">
             Create <span className=" shadow-inner ">Website</span> for Your
             Business
           </h1>

@@ -126,11 +126,17 @@ const SinglePortfolio = () => {
         <p> {portfolio.description}</p>
       </div>
       <div className="sl:grid sl:grid-cols-2 sl:mx-36 sl:items-center sl:gap-8">
-        <div>
+        <div className="flex flex-col items-center justify-center">
+          <div className="text-center mt-6  flex gap-8">
+            <span className=" shadow-2xl rounded-xl p-4 iix:p-2 ixr:text-[15px] flex iix:text-[15px] items-center s:text-[20px]">
+              Responsiveness
+              <FaArrowDownLong className="text-brightC animate-bounce " />
+            </span>
+          </div>
           <img
             src={portfolio.imageResponsive}
             alt={`${portfolio.name} Responsive`}
-            className="p-4 s:px-8 m:px-28 l:px-48 sl:px-2 sl:mt-20"
+            className="p-4 s:px-8 m:px-28 l:px-48 sl:px-2"
           />
           <div className="mt-8 px-4 ixx:px-8 hidden sl:flex">
             <div className="bg-lightC box-shad rounded-md p-4 mb-4 box-shad ">

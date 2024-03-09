@@ -7,7 +7,7 @@ const OneTIme = () => {
   const cards = [
     {
       id: 1,
-      title: "Landing Page",
+      title: "Business Website",
       image: budget,
       content: " $250",
     },

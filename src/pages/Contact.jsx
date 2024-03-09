@@ -154,7 +154,7 @@ const Contact = () => {
               <div className="text-center bg-redC rounded-xl text-lightC">
                 <motion.button
                   type="submit"
-                  className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 mt-4 tsgf m:mt-0 m:text-[15px]"
+                  className="iix:px-8 iix:py-3 ixx:text-[20px] bg-blackC inline-block text-brightC  iix:mb-2 ixr:mb-2 rounded-md ixr:px-14 ixr:py-3 mt-4 tsgf m:mt-0 m:text-[20px]"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -189,7 +189,7 @@ const Contact = () => {
                     </button>
                   </a>
 
-                  <a href="mailto:triumphsolar@yahoo.com">
+                  <a href="mailto:tsgcode201@gmail.com">
                     <button className=" box-shad p-2 bg-lightC rounded-full flex items-center gap-4">
                       <MdOutlineEmail />
                     </button>
@@ -227,7 +227,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-center items-center w-full">
               <p className="tsgf border-t-whiteC border-2 font-medium">
-                ©2024 Ts Sites - Web Design
+                ©2024 Soft Sites - Web Design
               </p>
             </div>
           </footer>

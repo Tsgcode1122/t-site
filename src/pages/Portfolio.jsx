@@ -21,6 +21,9 @@ const Portfolio = () => {
             Work
           </span>{" "}
         </h3>
+        <p className="text-center mt-4 text-greyC l:text-[21px]">
+          Tap to View{" "}
+        </p>
       </div>
       <div className="mt-16 flex flex-col m:grid m:grid-cols-2 gap-8 l:mx-16 mx-8 sl:mx-36 ">
         {portfolioData.map((portfolio, index) => (

@@ -21,7 +21,7 @@ const Hero = () => {
             <span className=" shadow-inner border-b-2 border-b-brightC p-1 iix:p-2 rounded-md bg-whiteC ">
               Website
             </span>{" "}
-            for Your Brand
+            for Your Business
           </h1>
         </div>
         <motion.div

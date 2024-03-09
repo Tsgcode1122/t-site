@@ -1,3 +1,108 @@
+@font-face {
+  font-family: "Pacaembu";
+  src: url("Pacaembu-Black.eot");
+  src:
+    local("Pacaembu Black"),
+    local("Pacaembu-Black"),
+    url("Pacaembu-Black.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Black.woff2") format("woff2"),
+    url("Pacaembu-Black.woff") format("woff"),
+    url("Pacaembu-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacaembu";
+  src: url("Pacaembu-Bold.eot");
+  src:
+    local("Pacaembu Bold"),
+    local("Pacaembu-Bold"),
+    url("Pacaembu-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Bold.woff2") format("woff2"),
+    url("Pacaembu-Bold.woff") format("woff"),
+    url("Pacaembu-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacaembu";
+  src: url("Pacaembu-Light.eot");
+  src:
+    local("Pacaembu Light"),
+    local("Pacaembu-Light"),
+    url("Pacaembu-Light.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Light.woff2") format("woff2"),
+    url("Pacaembu-Light.woff") format("woff"),
+    url("Pacaembu-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacaembu";
+  src: url("Pacaembu-Regular.eot");
+  src:
+    local("Pacaembu Regular"),
+    local("Pacaembu-Regular"),
+    url("Pacaembu-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Regular.woff2") format("woff2"),
+    url("Pacaembu-Regular.woff") format("woff"),
+    url("Pacaembu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacaembu";
+  src: url("Pacaembu-Thin.eot");
+  src:
+    local("Pacaembu Thin"),
+    local("Pacaembu-Thin"),
+    url("Pacaembu-Thin.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Thin.woff2") format("woff2"),
+    url("Pacaembu-Thin.woff") format("woff"),
+    url("Pacaembu-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacaembu";
+  src: url("Pacaembu-Medium.eot");
+  src:
+    local("Pacaembu Medium"),
+    local("Pacaembu-Medium"),
+    url("Pacaembu-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Medium.woff2") format("woff2"),
+    url("Pacaembu-Medium.woff") format("woff"),
+    url("Pacaembu-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacaembu Ultra";
+  src: url("Pacaembu-Ultra.eot");
+  src:
+    local("Pacaembu Ultra"),
+    local("Pacaembu-Ultra"),
+    url("Pacaembu-Ultra.eot?#iefix") format("embedded-opentype"),
+    url("Pacaembu-Ultra.woff2") format("woff2"),
+    url("Pacaembu-Ultra.woff") format("woff"),
+    url("Pacaembu-Ultra.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .box-shad {
   box-shadow: 1px 1px 7px -1px rgb(91, 91, 91);
 }
@@ -38,7 +143,7 @@ body {
   font-family: "Barlow", sans-serif;
 }
 .tsgb {
-  font-family: "Kanit", sans-serif;
+  font-family: "Pacaembu";
 }
 .border-design {
   border-bottom: 1px solid#27cf4e;

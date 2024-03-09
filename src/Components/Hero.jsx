@@ -16,12 +16,10 @@ const Hero = () => {
         style={bStyle}
       >
         <div className="iix:px-6 ixr:px-8 ixx:px-12 m:px-28  l:px-48 sl:px-72 ">
-          <h1 className="iix:text-[40px] ixr:text-[46px] ixi:text-[48px] l:text-[65px]  leading-tight  tsgb   text-blackC font-bold m:text-[60px] sl:text-[72px]">
+          <h1 className="iix:text-[30px] ixr:text-[36px] ixi:text-[38px] l:text-[65px]  leading-tight  tsgb   text-blackC font-bold m:text-[60px] sl:text-[72px]">
             Create{" "}
-            <span className=" shadow-inner border-b-2 border-b-brightC p-1 iix:p-2 rounded-md bg-whiteC ">
-              Website
-            </span>{" "}
-            for Your Business
+            <span className=" shadow-inner   p-1 iix:p-2  ">Website</span> for
+            Your Business
           </h1>
         </div>
         <motion.div

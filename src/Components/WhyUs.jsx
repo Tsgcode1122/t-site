@@ -72,7 +72,7 @@ const WhyUs = () => {
             >
               <div className="flex flex-col mt-[-6rem] glass box-shad rounded-3xl items-center p-3 ">
                 <img src={card.image} className="h-16" alt={card.title} />
-                <h3 className="mt-2 font-bold iix:text-[18px] ixr:text-[20px] font-tsg ">
+                <h3 className="mt-2 font-bold iix:text-[18px] ixr:text-[20px] tsgb ">
                   {card.title}
                 </h3>
                 <p className="text-center tsgf  text-greyC">{card.content}</p>

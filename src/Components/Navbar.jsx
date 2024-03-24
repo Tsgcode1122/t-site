@@ -132,7 +132,7 @@ const Navbar = () => {
         </motion.ul>
       </motion.nav>
 
-      <div className="hidden fixed w-full   text-darkC  m:flex m:px-6 m:py-5 navbar z-50 l:px-12 sl:px-32  m:top-4  l:top-5">
+      <div className=" fixed w-full ixx:px-8 ixx:hidden ixi:hidden ixr:hidden iix:hidden  text-darkC  m:flex m:px-6 m:py-5 navbar z-50 l:px-12 sl:px-32  m:top-4  l:top-5">
         <div className="bg-lightC w-full rounded-xl box-shad flex  justify-between items-center m:px-4 m:py-1 l:py-2 sl:py-2">
           <ul className="menu menu-horizontal md:text-[16px]  lg:text-[18px] xl:text-xl ">
             <li className="m:px-2 l:px-3 sl:px-4">

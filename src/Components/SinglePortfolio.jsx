@@ -138,7 +138,7 @@ const SinglePortfolio = () => {
             alt={`${portfolio.name} Responsive`}
             className="p-4 s:px-8 m:px-28 l:px-48 sl:px-2"
           />
-          <div className="mt-8 px-4 ixx:px-8 hidden sl:flex">
+          <div className="mt-8 px-4 ixx:px-8 ixx:hidden ixi:hidden ixr:hidden iix:hidden md:hidden  sl:flex">
             <div className="bg-lightC box-shad rounded-md p-4 mb-4 box-shad ">
               <div className="flex justify-between items-center mb-2">
                 <div className="flex items-center">

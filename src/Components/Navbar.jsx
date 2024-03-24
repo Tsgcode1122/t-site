@@ -4,7 +4,7 @@ import { Outlet, Link, useNavigate } from "react-router-dom";
 
 import { motion } from "framer-motion";
 import logo from "../Images/logo1.png";
-import logo2 from "../Images/logo22.png";
+import logo2 from "../Images/logo1.png";
 import { CiMail } from "react-icons/ci";
 import {
   IoIosArrowDropdown,
@@ -34,9 +34,13 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="bg-lightC flex justify-between items-center rounded-xl  w-full iix:py-1 iix:px-4 ixr:px-2 ixi:px-5  ixr:mt-[-12px] s:mt-[-4px] ixi:mt-[-14px] iix:mb-1 ixr:py-2 ixr:mb-2 s:py-2 ixi:py-2 ixi:mb-2 ixx:py-2 ixx:mb-3  ixx:px-5 box-shad"
         >
-          <p className=" ">Menu</p>
+          <p>Menu</p>
 
-          <img src={logo} className="max-w-full h-4 m-0 p-0 " alt="Logo" />
+          <img
+            src={logo}
+            className="max-w-full h-4 m-0 p-0 justify-center  "
+            alt="Logo"
+          />
 
           <motion.div
             variants={{

@@ -1,3 +1,12 @@
+import onestop from "../Images/onestop.png";
+import onestop1 from "../Images/onestop1.png";
+
+import betterhome from "../Images/betterhome.png";
+import betterhome1 from "../Images/betterhome1.png";
+
+import gemlux from "../Images/gemlux.png";
+import gemlux1 from "../Images/gemlux1.png";
+
 import travel from "../scroll/travel.jpg";
 import travel1 from "../Images/travelr.png";
 
@@ -23,6 +32,47 @@ import triumph from "../Images/rtriump.png";
 import triumph1 from "../Images/tr.png";
 
 export const portfolioData = [
+  {
+    id: "OneStop",
+    name: "OneStop Body",
+    image: onestop,
+    imageResponsive: onestop1,
+    description: "Body Cream Website",
+    review: {
+      name: "Rose Queen",
+      rating: 4,
+      date: "August 5, 2024",
+      content: "I love my website. it's well detailed and i recommend!!!",
+    },
+  },
+  {
+    id: "BetterHome",
+    name: "Better Home Improvement",
+    image: betterhome,
+    imageResponsive: betterhome1,
+    description: "Home Improvement Website",
+    review: {
+      name: "Amitai Scott",
+      rating: 5,
+      date: "September 9, 2024",
+      content:
+        "You did a very good Job, the website is very responsive, and appealing, we love our new website, thanks you so much.. voice notes.....",
+    },
+  },
+  {
+    id: "GemLuxe",
+    name: "Gem Luxe Aesthetics",
+    image: gemlux,
+    imageResponsive: gemlux1,
+    description: "Weight Loss Website",
+    review: {
+      name: "Gem Luxe",
+      rating: 4,
+      date: "July 2, 2024",
+      content:
+        "Nice and straight to point, we love all the implementation where client can fill in a form before appointment, and will me email to us electronically, this help us in keeping data of client.",
+    },
+  },
   {
     id: "SunPro",
     name: "SunPro",
